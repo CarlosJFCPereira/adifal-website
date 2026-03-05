@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ADIFAL - Inteligência Agrícola. Software de gestão de gado bovino. Controle inseminações, partos, calendários e muito mais.">
+    <meta name="keywords" content="gestão gado, bovinos, inseminação, agricultura, software agrícola, ADIFAL">
+    <meta name="author" content="ADIFAL - Inteligência Agrícola">
+    <title>ADIFAL - Inteligência Agrícola | Gestão de Gado</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- ===== NAVBAR ===== -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#" class="nav-logo">
+                <img src="assets/images/logo-backgroundOFF.png" alt="ADIFAL" class="nav-logo-img">
+                <span class="logo-text">ADIF<span class="logo-accent">AL</span></span>
+            </a>
+            <button class="nav-toggle" id="navToggle" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#funcionalidades">Funcionalidades</a></li>
+                <li><a href="#screenshots">Screenshots</a></li>
+                <li><a href="#futuro">Futuro</a></li>
+                <li><a href="#download">Download</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="hero">
+        <div class="hero-bg-overlay"></div>
+        <div class="container hero-content">
+            <h1 class="hero-title">
+                Gestão de Gado<br>
+                <span class="hero-title-accent">Inteligente e Simples</span>
+            </h1>
+            <p class="hero-subtitle">
+                A ADIFAL traz inteligência agrícola à sua exploração. 
+                Controle todo o ciclo reprodutivo do seu gado num único sistema — 
+                inseminações, partos, calendários e muito mais.
+            </p>
+            <div class="hero-actions">
+                <a href="#download" class="btn btn-primary btn-lg">
+                    <span class="btn-icon">⬇</span> Download Beta
+                </a>
+                <a href="#funcionalidades" class="btn btn-outline btn-lg">
+                    Saber Mais
+                </a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number">1000+</span>
+                    <span class="stat-label">Animais Geridos</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-number">100%</span>
+                    <span class="stat-label">Gratuito na Beta</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-number">24/7</span>
+                    <span class="stat-label">Acesso Local</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-wave">
+            <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+                <path d="M0,60 C360,120 720,0 1080,60 C1260,90 1380,70 1440,80 L1440,120 L0,120 Z" fill="#FEFCF5"/>
+            </svg>
+        </div>
+    </section>
+
+    <!-- ===== SOBRE ===== -->
+    <section class="section section-cream" id="sobre">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Quem Somos</span>
+                <h2 class="section-title">Sobre a ADIFAL</h2>
+                <p class="section-subtitle">
+                    Seis pilares que definem a nossa abordagem à modernização do sector agropecuário.
+                </p>
+            </div>
+            <div class="about-grid">
+                <div class="about-card">
+                    <div class="about-icon"><img src="assets/images/CowPhoneIcon.png" alt="Missão" class="about-icon-img"></div>
+                    <h3>Missão</h3>
+                    <p>Simplificar a gestão pecuária com tecnologia acessível, ajudando agricultores a tomar decisões informadas e a otimizar a produtividade das suas explorações.</p>
+                </div>
+                <div class="about-card">
+                    <div class="about-icon"><img src="assets/images/Eye.png" alt="Visão" class="about-icon-img"></div>
+                    <h3>Visão</h3>
+                    <p>Ser a referência em software de inteligência agrícola em Portugal, levando inovação digital ao campo e tornando a pecuária mais eficiente e sustentável.</p>
+                </div>
+                <div class="about-card">
+                    <div class="about-icon"><img src="assets/images/Valores.png" alt="Valores" class="about-icon-img"></div>
+                    <h3>Valores</h3>
+                    <p>Proximidade com o agricultor, simplicidade na utilização, inovação contínua e compromisso com o desenvolvimento do sector agrícola nacional.</p>
+                </div>
+            </div>
+            <div class="about-meaning">
+                <div class="meaning-title">O que significa ADIFAL?</div>
+                <p class="meaning-desc">Cada letra representa um compromisso com a evolução do sector agrícola.</p>
+                <div class="meaning-grid">
+                    <div class="meaning-item">
+                        <span class="meaning-letter">A</span>
+                        <span class="meaning-word">Automação</span>
+                        <span class="meaning-detail">Processos inteligentes</span>
+                    </div>
+                    <div class="meaning-item">
+                        <span class="meaning-letter">D</span>
+                        <span class="meaning-word">Desenvolvimento</span>
+                        <span class="meaning-detail">Soluções à medida</span>
+                    </div>
+                    <div class="meaning-item">
+                        <span class="meaning-letter">I</span>
+                        <span class="meaning-word">Inovação</span>
+                        <span class="meaning-detail">Tecnologia de ponta</span>
+                    </div>
+                    <div class="meaning-item">
+                        <span class="meaning-letter">F</span>
+                        <span class="meaning-word">Futuro</span>
+                        <span class="meaning-detail">Visão a longo prazo</span>
+                    </div>
+                    <div class="meaning-item">
+                        <span class="meaning-letter">A</span>
+                        <span class="meaning-word">Agrícola</span>
+                        <span class="meaning-detail">Raízes no campo</span>
+                    </div>
+                    <div class="meaning-item">
+                        <span class="meaning-letter highlight">L</span>
+                        <span class="meaning-word">Liderança</span>
+                        <span class="meaning-detail">Referência no sector</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FUNCIONALIDADES ===== -->
+    <section class="section section-white" id="funcionalidades">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">O Que Oferecemos</span>
+                <h2 class="section-title">Funcionalidades</h2>
+                <p class="section-subtitle">
+                    Tudo o que precisa para gerir a sua exploração pecuária num único lugar.
+                </p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card" data-aos="fade-up">
+                    <div class="feature-icon"><img src="assets/images/GestãoVaca.png" alt="Gestão de Gado" class="feature-icon-img"></div>
+                    <h3>Gestão de Gado</h3>
+                    <p>Registe, edite e consulte toda a informação dos seus animais. Ficha completa com histórico, estado reprodutivo, lactações e muito mais.</p>
+                    <ul class="feature-list">
+                        <li>Cadastro completo de animais</li>
+                        <li>Pesquisa rápida por número</li>
+                        <li>Exportação de dados</li>
+                    </ul>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-icon"><img src="assets/images/Seringa.png" alt="Inseminação" class="feature-icon-img"></div>
+                    <h3>Inseminação e Reprodução</h3>
+                    <p>Controle total do ciclo reprodutivo — registe inseminações, acompanhe gestações e monitorize o estado de cada animal.</p>
+                    <ul class="feature-list">
+                        <li>Registo de inseminações</li>
+                        <li>Verificação de gestação</li>
+                        <li>Histórico reprodutivo</li>
+                    </ul>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-icon"><img src="assets/images/Calendario.png" alt="Calendário" class="feature-icon-img"></div>
+                    <h3>Calendário de Eventos</h3>
+                    <p>Visualize partos previstos, secagens e transições num calendário intuitivo. Nunca perca uma data importante.</p>
+                    <ul class="feature-list">
+                        <li>Partos previstos</li>
+                        <li>Datas de secagem</li>
+                        <li>Períodos de transição</li>
+                    </ul>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-icon"><img src="assets/images/Ampulheta.png" alt="Período de Espera" class="feature-icon-img"></div>
+                    <h3>Período de Espera</h3>
+                    <p>Monitorize o período de espera voluntário de cada animal, garantindo que as inseminações são feitas no momento ideal.</p>
+                    <ul class="feature-list">
+                        <li>Contagem automática de dias</li>
+                        <li>Alertas de período ideal</li>
+                        <li>Estatísticas de fertilidade</li>
+                    </ul>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="feature-icon">🛡️</div>
+                    <h3>Painel de Administração</h3>
+                    <p>Gerencie utilizadores, monitorize o servidor e controle acessos. Tudo sob o seu controlo total num painel dedicado.</p>
+                    <ul class="feature-list">
+                        <li>Gestão de utilizadores</li>
+                        <li>Estado do servidor</li>
+                        <li>Sessões ativas</li>
+                    </ul>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="feature-icon">🔒</div>
+                    <h3>Segurança e Dados</h3>
+                    <p>Os seus dados ficam na sua rede. Servidor local com autenticação segura, backups e controlo total da informação.</p>
+                    <ul class="feature-list">
+                        <li>Autenticação JWT</li>
+                        <li>Servidor local (sua rede)</li>
+                        <li>Base de dados MySQL</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SCREENSHOTS ===== -->
+    <section class="section section-green" id="screenshots">
+        <div class="container">
+            <div class="section-header section-header-light">
+                <span class="section-tag section-tag-light">Veja em Ação</span>
+                <h2 class="section-title">A Aplicação</h2>
+                <p class="section-subtitle">
+                    Interface limpa e intuitiva, desenhada para ser fácil de usar no dia-a-dia da exploração.
+                </p>
+            </div>
+            <div class="screenshots-placeholder">
+                <div class="screenshot-frame">
+                    <div class="screenshot-titlebar">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                        <span class="titlebar-text">GadoApp — Gestão de Gado</span>
+                    </div>
+                    <div class="screenshot-body">
+                        <img src="assets/images/AppExample.png" alt="Exemplo da Aplicação GadoApp" class="screenshot-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== IMPLEMENTAÇÕES FUTURAS ===== -->
+    <section class="section section-cream" id="futuro">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Roadmap</span>
+                <h2 class="section-title">Implementações Futuras</h2>
+                <p class="section-subtitle">
+                    Estamos a construir o futuro da gestão pecuária. Veja o que vem a seguir.
+                </p>
+            </div>
+
+            <div class="carousel">
+                <div class="carousel-track" id="carouselTrack">
+
+                    <!-- Slide 1: Histórico de Alterações -->
+                    <div class="carousel-slide">
+                        <div class="future-card">
+                            <div class="future-card-header">
+                                <span class="future-icon">📝</span>
+                                <div>
+                                    <h3>Histórico de Alterações</h3>
+                                    <span class="future-badge">Em Planeamento</span>
+                                </div>
+                            </div>
+                            <p class="future-desc">Saiba exatamente quem fez o quê e quando. Total rastreabilidade de todas as ações na aplicação.</p>
+                            <div class="future-features">
+                                <div class="future-feature-item">
+                                    <span class="future-check">✓</span>
+                                    <div>
+                                        <strong>Logs de Utilizadores</strong>
+                                        <p>Registo completo de quem acedeu e modificou dados na aplicação</p>
+                                    </div>
+                                </div>
+                                <div class="future-feature-item">
+                                    <span class="future-check">✓</span>
+                                    <div>
+                                        <strong>Auditoria de Ações</strong>
+                                        <p>Histórico detalhado de criações, edições e eliminações</p>
+                                    </div>
+                                </div>
+                                <div class="future-feature-item">
+                                    <span class="future-check">✓</span>
+                                    <div>
+                                        <strong>Relatórios de Atividade</strong>
+                                        <p>Visualize a atividade por utilizador, data ou tipo de ação</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 2: Histórico Médico -->
+                    <div class="carousel-slide">
+                        <div class="future-card">
+                            <div class="future-card-header">
+                                <span class="future-icon">🏥</span>
+                                <div>
+                                    <h3>Histórico Médico</h3>
+                                    <span class="future-badge">Em Desenvolvimento</span>
+                                </div>
+                            </div>
+                            <p class="future-desc">Acompanhe a saúde de cada animal com um registo médico completo — tratamentos, medicamentos, custos e resultados, tudo num só lugar.</p>
+                            <div class="future-features">
+                                <div class="future-feature-item">
+                                    <span class="future-check">✓</span>
+                                    <div>
+                                        <strong>Registo de Tratamentos</strong>
+                                        <p>Guarde cada tratamento aplicado, com data, medicamento e dosagem</p>
+                                    </div>
+                                </div>
+                                <div class="future-feature-item">
+                                    <span class="future-check">✓</span>
+                                    <div>
+                                        <strong>Alertas e Lembretes</strong>
+                                        <p>Receba notificações automáticas de próximos tratamentos e reforços</p>
+                                    </div>
+                                </div>
+                                <div class="future-feature-item">
+                                    <span class="future-check">✓</span>
+                                    <div>
+                                        <strong>Análise de Eficácia</strong>
+                                        <p>Veja a taxa de sucesso de cada remédio e o custo por tratamento</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 3: Histórico de Cascos -->
+                    <div class="carousel-slide">
+                        <div class="future-card">
+                            <div class="future-card-header">
+                                <span class="future-icon">🦶</span>
+                                <div>
+                                    <h3>Histórico de Cascos</h3>
+                                    <span class="future-badge">Em Planeamento</span>
+                                </div>
+                            </div>
+                            <p class="future-desc">Previna problemas podais antes que aconteçam. Registe verificações, agende manutenções e detete padrões no rebanho.</p>
+                            <div class="future-features">
+                                <div class="future-feature-item">
+                                    <span class="future-check">✓</span>
+                                    <div>
+                                        <strong>Calendário de Manutenção</strong>
+                                        <p>Agende e acompanhe verificações periódicas de cascos para cada animal</p>
+                                    </div>
+                                </div>
+                                <div class="future-feature-item">
+                                    <span class="future-check">✓</span>
+                                    <div>
+                                        <strong>Registo de Ocorrências</strong>
+                                        <p>Documente cada problema com causa, tratamento e evolução</p>
+                                    </div>
+                                </div>
+                                <div class="future-feature-item">
+                                    <span class="future-check">✓</span>
+                                    <div>
+                                        <strong>Deteção de Padrões</strong>
+                                        <p>Identifique tendências e animais com predisposição a problemas recorrentes</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 4: Leitura de Leite -->
+                    <div class="carousel-slide">
+                        <div class="future-card">
+                            <div class="future-card-header">
+                                <span class="future-icon">🥛</span>
+                                <div>
+                                    <h3>Leitura de Leite</h3>
+                                    <span class="future-badge future-badge-highlight">Visão de Futuro</span>
+                                </div>
+                            </div>
+                            <p class="future-desc">Conecte os seus equipamentos de ordenha à aplicação e tenha dados de produção leiteira em tempo real, sem registos manuais.</p>
+                            <div class="future-features">
+                                <div class="future-feature-item">
+                                    <span class="future-check">✓</span>
+                                    <div>
+                                        <strong>Integração com Equipamentos</strong>
+                                        <p>Leitura automática de dados das máquinas de ordenha</p>
+                                    </div>
+                                </div>
+                                <div class="future-feature-item">
+                                    <span class="future-check">✓</span>
+                                    <div>
+                                        <strong>Produção por Animal</strong>
+                                        <p>Acompanhe a quantidade diária de leite de cada vaca individualmente</p>
+                                    </div>
+                                </div>
+                                <div class="future-feature-item">
+                                    <span class="future-check">✓</span>
+                                    <div>
+                                        <strong>Relatórios e Tendências</strong>
+                                        <p>Gráficos de evolução, comparação entre animais e médias do rebanho</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 5: App Móvel -->
+                    <div class="carousel-slide">
+                        <div class="future-card">
+                            <div class="future-card-header">
+                                <span class="future-icon">📱</span>
+                                <div>
+                                    <h3>App Móvel</h3>
+                                    <span class="future-badge future-badge-highlight">Visão de Futuro</span>
+                                </div>
+                            </div>
+                            <p class="future-desc">Leve a gestão do seu rebanho para o campo. Consulte, registe e acompanhe tudo diretamente do telemóvel, sem precisar de computador.</p>
+                            <div class="future-features">
+                                <div class="future-feature-item">
+                                    <span class="future-check">✓</span>
+                                    <div>
+                                        <strong>Acesso em Qualquer Lugar</strong>
+                                        <p>Consulte fichas de animais, inseminações e calendário no campo</p>
+                                    </div>
+                                </div>
+                                <div class="future-feature-item">
+                                    <span class="future-check">✓</span>
+                                    <div>
+                                        <strong>Registo Rápido</strong>
+                                        <p>Adicione observações, tratamentos e eventos em poucos toques</p>
+                                    </div>
+                                </div>
+                                <div class="future-feature-item">
+                                    <span class="future-check">✓</span>
+                                    <div>
+                                        <strong>Notificações em Tempo Real</strong>
+                                        <p>Receba alertas de partos previstos, tratamentos e prazos importantes</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 6: Inteligência Artificial -->
+                    <div class="carousel-slide">
+                        <div class="future-card">
+                            <div class="future-card-header">
+                                <span class="future-icon">🤖</span>
+                                <div>
+                                    <h3>Inteligência Artificial</h3>
+                                    <span class="future-badge future-badge-highlight">Visão de Futuro</span>
+                                </div>
+                            </div>
+                            <p class="future-desc">Deixe a IA trabalhar por si. Previsões, recomendações e análises automáticas que transformam dados em decisões mais inteligentes.</p>
+                            <div class="future-features">
+                                <div class="future-feature-item">
+                                    <span class="future-check">✓</span>
+                                    <div>
+                                        <strong>Previsões Reprodutivas</strong>
+                                        <p>Sugestão dos melhores momentos para inseminação com base no histórico</p>
+                                    </div>
+                                </div>
+                                <div class="future-feature-item">
+                                    <span class="future-check">✓</span>
+                                    <div>
+                                        <strong>Deteção de Anomalias</strong>
+                                        <p>Identificação automática de padrões incomuns na saúde ou produção</p>
+                                    </div>
+                                </div>
+                                <div class="future-feature-item">
+                                    <span class="future-check">✓</span>
+                                    <div>
+                                        <strong>Recomendações Personalizadas</strong>
+                                        <p>Sugestões de ações adaptadas ao perfil de cada animal e do rebanho</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Carousel Controls -->
+                <div class="carousel-controls">
+                    <button class="carousel-btn carousel-prev" id="carouselPrev" aria-label="Anterior">
+                        &#x25C0;
+                    </button>
+                    <div class="carousel-dots" id="carouselDots"></div>
+                    <button class="carousel-btn carousel-next" id="carouselNext" aria-label="Seguinte">
+                        &#x25B6;
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ===== DOWNLOAD ===== -->
+    <section class="section section-cream" id="download">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Experimente Já</span>
+                <h2 class="section-title">Download</h2>
+                <p class="section-subtitle">
+                    Faça o download da versão beta gratuita e comece a gerir o seu gado de forma inteligente.
+                </p>
+            </div>
+            <div class="download-card">
+                <div class="download-info">
+                    <div class="download-version">
+                        <span class="version-badge">BETA</span>
+                        <h3>GadoApp v1.0.0-beta</h3>
+                    </div>
+                    <div class="download-meta">
+                        <div class="meta-item">
+                            <span class="meta-label">Plataforma</span>
+                            <span class="meta-value">Windows / Linux / macOS</span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label">Requisitos</span>
+                            <span class="meta-value">Java 17+ instalado</span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label">Tamanho</span>
+                            <span class="meta-value">~25 MB</span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label">Preço</span>
+                            <span class="meta-value download-free">Gratuito</span>
+                        </div>
+                    </div>
+                    <a href="assets/downloads/GadoApp-Beta.zip" class="btn btn-primary btn-lg download-btn">
+                        <span class="btn-icon">⬇</span> Download GadoApp Beta
+                    </a>
+                    <p class="download-note">
+                        * A versão beta é gratuita e destina-se a testes. 
+                        Inclui a aplicação cliente — o servidor deve ser configurado separadamente.
+                    </p>
+                </div>
+                <div class="download-requirements">
+                    <h4>Como Instalar</h4>
+                    <ol class="install-steps">
+                        <li>
+                            <span class="step-num">1</span>
+                            <div>
+                                <strong>Instale o Java 17+</strong>
+                                <p>Descarregue o JDK em <a href="https://adoptium.net" target="_blank">adoptium.net</a></p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="step-num">2</span>
+                            <div>
+                                <strong>Configure o servidor</strong>
+                                <p>Execute o script SQL para criar a base de dados MySQL</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="step-num">3</span>
+                            <div>
+                                <strong>Inicie o servidor</strong>
+                                <p>Execute o GadoApp-Server.jar na sua máquina ou rede local</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="step-num">4</span>
+                            <div>
+                                <strong>Abra a aplicação</strong>
+                                <p>Execute o GadoApp.jar e faça login</p>
+                            </div>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CONTACTO ===== -->
+    <section class="section section-white" id="contacto">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Fale Connosco</span>
+                <h2 class="section-title">Contacto</h2>
+                <p class="section-subtitle">
+                    Tem dúvidas, sugestões ou encontrou um bug? Entre em contacto connosco.
+                </p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info-cards">
+                    <div class="contact-card contact-card-main">
+                        <div class="contact-icon">📧</div>
+                        <h4>Email</h4>
+                        <a href="mailto:AdifalContacto@gmail.com">AdifalContacto@gmail.com</a>
+                        <p class="contact-note">Para dúvidas, sugestões, bugs ou parcerias</p>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="nome">Nome</label>
+                            <input type="text" id="nome" name="nome" placeholder="O seu nome" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="email@exemplo.pt" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="assunto">Assunto</label>
+                        <select id="assunto" name="assunto">
+                            <option value="geral">Informação Geral</option>
+                            <option value="suporte">Suporte Técnico</option>
+                            <option value="bug">Reportar Bug</option>
+                            <option value="sugestao">Sugestão</option>
+                            <option value="parceria">Parceria</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="mensagem">Mensagem</label>
+                        <textarea id="mensagem" name="mensagem" rows="5" placeholder="Escreva a sua mensagem..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-lg">
+                        Enviar Mensagem
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <img src="assets/images/logo-backgroundOFF.png" alt="ADIFAL" class="footer-logo-img">
+                        <span class="logo-text">ADIF<span class="logo-accent">AL</span></span>
+                    </div>
+                    <p class="footer-tagline">Inteligência Agrícola</p>
+                    <p class="footer-desc">Simplificamos a gestão pecuária com tecnologia acessível e intuitiva.</p>
+                </div>
+                <div class="footer-links-group">
+                    <h4>Navegação</h4>
+                    <ul>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#funcionalidades">Funcionalidades</a></li>
+                        <li><a href="#download">Download</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links-group">
+                    <h4>Recursos</h4>
+                    <ul>
+                        <li><a href="#download">Download Beta</a></li>
+                        <li><a href="https://adoptium.net" target="_blank">Java JDK</a></li>
+                        <li><a href="https://dev.mysql.com/downloads/" target="_blank">MySQL</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links-group">
+                    <h4>Contacto</h4>
+                    <ul>
+                        <li><a href="mailto:AdifalContacto@gmail.com">AdifalContacto@gmail.com</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 ADIFAL — Inteligência Agrícola. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

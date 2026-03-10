@@ -66,13 +66,33 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Observe elements that should animate on scroll
     const animateElements = document.querySelectorAll(
-        '.about-card, .feature-card, .contact-card, .download-card, .about-meaning, .screenshot-frame, .hardware-card'
+        '.about-card, .feature-card, .contact-card, .download-card, .about-meaning, .screenshot-frame, .hw-accordion'
     );
 
     animateElements.forEach(el => {
         el.style.opacity = '0';
         el.style.transform = 'translateY(30px)';
         observer.observe(el);
+    });
+
+    // === HARDWARE ACCORDION ===
+    document.querySelectorAll('.hw-accordion-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+            const accordion = btn.closest('.hw-accordion');
+            const isActive = accordion.classList.contains('active');
+
+            // Close all
+            document.querySelectorAll('.hw-accordion').forEach(a => {
+                a.classList.remove('active');
+                a.querySelector('.hw-accordion-btn').setAttribute('aria-expanded', 'false');
+            });
+
+            // Toggle clicked (open if it was closed)
+            if (!isActive) {
+                accordion.classList.add('active');
+                btn.setAttribute('aria-expanded', 'true');
+            }
+        });
     });
 
     // === ACTIVE NAV LINK HIGHLIGHT ===

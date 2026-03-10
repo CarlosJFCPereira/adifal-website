@@ -229,73 +229,183 @@
                 <span class="section-tag section-tag-light">Tecnologia no Campo</span>
                 <h2 class="section-title">As Nossas Máquinas</h2>
                 <p class="section-subtitle">
-                    Hardware desenvolvido pela ADIFAL para monitorizar a qualidade do leite em tempo real, diretamente na ordenha.
+                    Desenvolvemos hardware próprio que se instala diretamente na linha de ordenha — entre a tetina e o tanque — 
+                    para analisar o leite em tempo real. Compatível com qualquer tipo de ordenha (sala, robot, espinha de peixe), 
+                    com opção de instalação por sala ou por vaca individual. Clique em cada sistema para saber mais.
                 </p>
             </div>
-            <div class="hardware-grid">
-                <div class="hardware-card hardware-card-main">
-                    <div class="hardware-card-icon">🥛</div>
-                    <h3>Deteção de Mamite em Tempo Real</h3>
-                    <p>A nossa máquina analisa o leite durante a ordenha e deteta automaticamente sinais de mamite. Quando detetada, o leite contaminado é <strong>desviado para um tanque de despejo</strong>, protegendo a qualidade do leite no tanque principal.</p>
-                    <div class="hardware-specs">
-                        <div class="hardware-spec">
-                            <span class="spec-icon">⚡</span>
-                            <div>
-                                <strong>Análise em Tempo Real</strong>
-                                <p>Sensores de condutividade e pH analisam o leite durante toda a ordenha</p>
-                            </div>
+            <div class="hardware-accordions">
+
+                <!-- ACCORDION 1: Deteção de Mamite -->
+                <div class="hw-accordion">
+                    <button class="hw-accordion-btn" aria-expanded="false">
+                        <div class="hw-accordion-header">
+                            <h3>Sistema de Deteção de Mamite em Tempo Real</h3>
+                            <p class="hw-accordion-preview">Análise contínua do leite durante a ordenha com desvio automático de leite contaminado.</p>
                         </div>
-                        <div class="hardware-spec">
-                            <span class="spec-icon">🔀</span>
-                            <div>
-                                <strong>Desvio Automático</strong>
-                                <p>Válvula solenoide desvia o leite contaminado, sem intervenção manual</p>
-                            </div>
+                        <span class="hw-accordion-arrow">&#9662;</span>
+                    </button>
+                    <div class="hw-accordion-content">
+                        <div class="hw-detail-section">
+                            <h4>Como Funciona</h4>
+                            <p>
+                                O nosso sistema instala-se após a saída da tetina, onde uma unidade compacta — uma caixa com sensores internos — 
+                                recebe o leite que a atravessa continuamente. Durante toda a ordenha, sensores de <strong>condutividade elétrica</strong> 
+                                e <strong>pH</strong> analisam o leite em tempo real, detetando alterações que indicam presença de mamite.
+                            </p>
+                            <p>
+                                Quando os valores ultrapassam os limiares definidos, o sistema atua em aproximadamente <strong>3 segundos</strong>: 
+                                uma válvula solenoide desvia automaticamente o leite contaminado para um <strong>tanque de despejo intermédio</strong>. 
+                                Este tanque intermédio existe precisamente para ganhar tempo de reação, garantindo que nenhum leite contaminado 
+                                chega ao tanque principal e estraga todo o lote.
+                            </p>
                         </div>
-                        <div class="hardware-spec">
-                            <span class="spec-icon">🛡️</span>
-                            <div>
-                                <strong>Proteção do Tanque</strong>
-                                <p>Impede que leite com mamite entre no tanque principal e estrague o lote</p>
-                            </div>
+                        <div class="hw-detail-section">
+                            <h4>Alerta e Controlo pelo Agricultor</h4>
+                            <p>
+                                O sistema não se limita a desviar — <strong>alerta imediatamente o agricultor</strong> através do software, 
+                                identificando qual a vaca (ou sala) com o problema. O agricultor pode então confirmar se se trata de mamite 
+                                e decidir como proceder: continuar a desviar, parar a ordenha daquele animal, ou retomar normalmente. 
+                                O controlo final é sempre do agricultor.
+                            </p>
                         </div>
-                    </div>
-                </div>
-                <div class="hardware-card">
-                    <div class="hardware-card-icon">📊</div>
-                    <h3>Medição de Gordura do Leite</h3>
-                    <p>Sensores de alta precisão medem a <strong>percentagem de gordura do leite</strong> em tempo real, com uma taxa de aproximação de até <strong>1%</strong>.</p>
-                    <div class="hardware-specs">
-                        <div class="hardware-spec">
-                            <span class="spec-icon">🎯</span>
-                            <div>
-                                <strong>Precisão até 1%</strong>
-                                <p>Taxa de aproximação fiável para decisões informadas</p>
-                            </div>
-                        </div>
-                        <div class="hardware-spec">
-                            <span class="spec-icon">📈</span>
-                            <div>
-                                <strong>Dados por Animal</strong>
-                                <p>Registo individual de gordura por vaca, integrado no software</p>
-                            </div>
+                        <div class="hw-detail-section">
+                            <h4>Histórico e Rastreabilidade</h4>
+                            <p>
+                                Na instalação por vaca individual, o sistema regista <strong>histórico completo de deteções por animal</strong>. 
+                                Isto permite identificar vacas com problemas recorrentes, recomendar tratamentos e acompanhar a evolução — 
+                                tudo integrado no software ADIFAL.
+                            </p>
                         </div>
                     </div>
                 </div>
-                <div class="hardware-card">
-                    <div class="hardware-card-icon">🔧</div>
-                    <h3>Componentes do Sistema</h3>
-                    <p>Hardware robusto e fiável, pensado para o ambiente da vacaria.</p>
-                    <div class="hardware-components">
-                        <span class="hw-chip">ESP-32 WiFi</span>
-                        <span class="hw-chip">Sensor de Caudal YF-S201</span>
-                        <span class="hw-chip">Sensor de pH SEN0161-V2</span>
-                        <span class="hw-chip">Sensor de Condutividade EZO-EC</span>
-                        <span class="hw-chip">Sensor de Temperatura DS18B20</span>
-                        <span class="hw-chip">Válvula Solenoide 12V</span>
-                        <span class="hw-chip">Transformador 230V→12V</span>
+
+                <!-- ACCORDION 2: Medição de Gordura -->
+                <div class="hw-accordion">
+                    <button class="hw-accordion-btn" aria-expanded="false">
+                        <div class="hw-accordion-header">
+                            <h3>Medição de Gordura do Leite Inline</h3>
+                            <p class="hw-accordion-preview">Percentagem de gordura medida em tempo real durante a ordenha, com precisão até 1%.</p>
+                        </div>
+                        <span class="hw-accordion-arrow">&#9662;</span>
+                    </button>
+                    <div class="hw-accordion-content">
+                        <div class="hw-detail-section">
+                            <h4>Medição em Linha</h4>
+                            <p>
+                                A medição é feita <strong>inline</strong>, ou seja, enquanto o leite passa pela unidade de sensores durante a ordenha — 
+                                sem necessidade de recolher amostras à parte. O sistema mede a percentagem de gordura numa escala de 0 a 100%, 
+                                com uma <strong>taxa de aproximação de até 1%</strong> face a análises laboratoriais de referência.
+                            </p>
+                        </div>
+                        <div class="hw-detail-section">
+                            <h4>Dados Individuais por Animal</h4>
+                            <p>
+                                Na configuração por vaca, cada animal tem o seu registo individual de gordura, integrado diretamente no software ADIFAL. 
+                                Isto permite ao agricultor acompanhar a evolução da qualidade do leite de cada vaca ao longo do tempo 
+                                e tomar decisões informadas sobre alimentação e genética.
+                            </p>
+                        </div>
+                        <div class="hw-detail-section">
+                            <h4>Mais do que Gordura</h4>
+                            <p>
+                                Para além da gordura, o sistema atual também mede <strong>caudal de leite</strong> e deteta <strong>mamite</strong>. 
+                                Estamos já a planear futuras versões que incluirão medição de proteína, lactose e outros parâmetros — 
+                                um laboratório portátil diretamente na ordenha.
+                            </p>
+                        </div>
                     </div>
                 </div>
+
+                <!-- ACCORDION 3: Instalação e Preço -->
+                <div class="hw-accordion">
+                    <button class="hw-accordion-btn" aria-expanded="false">
+                        <div class="hw-accordion-header">
+                            <h3>Instalação, Compatibilidade e Preço</h3>
+                            <p class="hw-accordion-preview">Compatível com qualquer tipo de ordenha. Instalação técnica pela equipa ADIFAL.</p>
+                        </div>
+                        <span class="hw-accordion-arrow">&#9662;</span>
+                    </button>
+                    <div class="hw-accordion-content">
+                        <div class="hw-detail-section">
+                            <h4>Compatibilidade Universal</h4>
+                            <p>
+                                O sistema funciona em <strong>qualquer tipo de ordenha</strong> — sala convencional, espinha de peixe, rotativa ou robot. 
+                                A instalação é feita pela <strong>equipa técnica da ADIFAL</strong>, que adapta o sistema ao equipamento existente na exploração.
+                            </p>
+                            <p>
+                                Se o cliente já tiver algum equipamento de análise ou sensores instalados, podemos <strong>integrá-los no nosso sistema</strong>, 
+                                reduzindo o custo total da instalação.
+                            </p>
+                        </div>
+                        <div class="hw-detail-section">
+                            <h4>Online e Offline</h4>
+                            <p>
+                                A máquina funciona <strong>sem internet</strong> — a análise, deteção e desvio são feitos localmente em tempo real. 
+                                No entanto, é necessária conexão à rede para <strong>guardar os dados da colheita</strong> no software ADIFAL, 
+                                consultar históricos e receber alertas remotamente.
+                            </p>
+                        </div>
+                        <div class="hw-detail-section">
+                            <h4>Duas Opções de Instalação</h4>
+                            <p>
+                                <strong>Por sala de ordenha</strong> — uma unidade que analisa o leite de toda a sala. Ideal para explorações que querem 
+                                monitorização geral a menor custo.<br>
+                                <strong>Por vaca individual</strong> — uma unidade por ponto de ordenha. Permite rastreabilidade total, 
+                                identificando exatamente qual animal tem problemas e gerando histórico individual.
+                            </p>
+                        </div>
+                        <div class="hw-detail-section">
+                            <h4>Investimento</h4>
+                            <p>
+                                O preço situa-se entre <strong>300€ e 500€ por unidade</strong>, dependendo da configuração escolhida 
+                                (por sala ou por vaca). Se a exploração já possuir equipamentos compatíveis, 
+                                o custo pode ser reduzido com integração no sistema existente. 
+                                Contacte-nos para um orçamento personalizado.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ACCORDION 4: Estado de Desenvolvimento -->
+                <div class="hw-accordion">
+                    <button class="hw-accordion-btn" aria-expanded="false">
+                        <div class="hw-accordion-header">
+                            <h3>Estado de Desenvolvimento</h3>
+                            <p class="hw-accordion-preview">Projeto em fase de desenvolvimento ativo com toda a engenharia definida.</p>
+                        </div>
+                        <span class="hw-accordion-arrow">&#9662;</span>
+                    </button>
+                    <div class="hw-accordion-content">
+                        <div class="hw-detail-section">
+                            <h4>Onde Estamos</h4>
+                            <p>
+                                Toda a <strong>engenharia e arquitetura do sistema estão definidas</strong> — esquemas elétricos, seleção de sensores, 
+                                lógica de controlo e integração com o software. Estamos atualmente em <strong>fase de desenvolvimento ativo</strong>, 
+                                a construir os primeiros protótipos físicos e a validar os sensores em condições reais.
+                            </p>
+                        </div>
+                        <div class="hw-detail-section">
+                            <h4>Componentes Selecionados</h4>
+                            <p>
+                                O sistema é construído com componentes industriais comprovados: microcontrolador <strong>ESP-32 com WiFi</strong> integrado, 
+                                sensor de caudal <strong>YF-S201</strong>, sensor de pH <strong>SEN0161-V2</strong>, 
+                                sensor de condutividade <strong>EZO-EC</strong>, sensor de temperatura <strong>DS18B20</strong>, 
+                                válvula solenoide de <strong>12V</strong> para desvio de leite, e alimentação via transformador 230V para 12V 
+                                com conversor LM2596 para 5V.
+                            </p>
+                        </div>
+                        <div class="hw-detail-section">
+                            <h4>Quer Ser dos Primeiros?</h4>
+                            <p>
+                                Se tem interesse em testar o sistema na sua exploração ou quer acompanhar o desenvolvimento, 
+                                <a href="#contacto" class="hw-link">entre em contacto connosco</a>. 
+                                Estamos à procura de explorações parceiras para a fase de testes piloto.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>

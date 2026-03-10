@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ADIFAL - Sistema de Deteção de Mamite em Tempo Real. Análise contínua do leite com desvio automático.">
+    <title>Deteção de Mamite em Tempo Real | ADIFAL</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body class="hw-detail-page">
+
+    <!-- NAVBAR -->
+    <nav class="navbar scrolled" id="navbar">
+        <div class="container nav-container">
+            <a href="../index.html" class="nav-logo">
+                <img src="../assets/images/logo-backgroundOFF.png" alt="ADIFAL" class="nav-logo-img">
+                <span class="logo-text">ADIF<span class="logo-accent">AL</span></span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="../index.html#hardware">&larr; Voltar</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <div class="hw-detail-hero">
+        <div class="container">
+            <a href="../index.html#hardware" class="hw-back-link">&larr; Voltar ao Hardware</a>
+            <h1>Sistema de Deteção de Mamite em Tempo Real</h1>
+            <p>Análise contínua do leite durante a ordenha com desvio automático de leite contaminado, protegendo a qualidade do tanque principal.</p>
+        </div>
+    </div>
+
+    <!-- CONTEÚDO -->
+    <div class="hw-detail-body">
+        <div class="container">
+
+            <h2>O Que É</h2>
+            <p>
+                O nosso sistema de deteção de mamite é uma unidade compacta que se instala diretamente na linha de ordenha, 
+                após a saída da tetina. Trata-se de uma caixa com sensores internos por onde o leite passa continuamente 
+                durante toda a ordenha. Os sensores analisam o leite em tempo real, detetando alterações que indicam 
+                presença de mamite — antes de o leite chegar ao tanque principal.
+            </p>
+
+            <h2>Como Funciona</h2>
+            <p>
+                Durante a ordenha, sensores de <strong>condutividade elétrica</strong> e <strong>pH</strong> monitorizam 
+                continuamente o leite que passa pela unidade. A mamite provoca alterações mensuráveis nestes parâmetros — 
+                aumento da condutividade e variação do pH — que o sistema deteta automaticamente.
+            </p>
+            <p>
+                Quando os valores ultrapassam os limiares definidos, o sistema reage em aproximadamente <strong>3 segundos</strong>. 
+                Uma válvula solenoide de 12V desvia automaticamente o leite contaminado para um <strong>tanque de despejo intermédio</strong>. 
+                Este tanque intermédio existe precisamente para ganhar tempo de reação — o leite fica retido ali enquanto o sistema 
+                processa os dados dos sensores, garantindo que nenhum leite contaminado chega ao tanque principal e estraga todo o lote.
+            </p>
+
+            <h2>Alerta e Controlo pelo Agricultor</h2>
+            <p>
+                O sistema não se limita a desviar o leite. Quando deteta uma anomalia, <strong>alerta imediatamente o agricultor</strong> 
+                através do software ADIFAL, identificando qual a vaca (na instalação individual) ou qual a sala (na instalação por sala) 
+                com o problema.
+            </p>
+            <p>
+                O agricultor pode então:
+            </p>
+            <p>
+                <strong>Confirmar se é mamite</strong> — verificar o animal e confirmar o diagnóstico no sistema.<br>
+                <strong>Continuar a desviar</strong> — manter o leite daquele animal a ir para o tanque de despejo.<br>
+                <strong>Parar a ordenha</strong> — interromper a ordenha daquele animal específico.<br>
+                <strong>Retomar normalmente</strong> — se for um falso positivo, retomar o fluxo normal para o tanque principal.
+            </p>
+            <p>
+                O controlo final é sempre do agricultor. O sistema protege automaticamente, mas deixa a decisão final nas mãos de quem conhece o rebanho.
+            </p>
+
+            <h2>Histórico e Rastreabilidade</h2>
+            <p>
+                Na instalação por vaca individual, o sistema regista um <strong>histórico completo de deteções por animal</strong>. 
+                Cada evento é guardado com data, hora, valores dos sensores e a decisão do agricultor. 
+                Isto permite:
+            </p>
+            <p>
+                <strong>Identificar vacas com problemas recorrentes</strong> — ver quais animais têm mamite com frequência.<br>
+                <strong>Recomendar tratamentos</strong> — com base no histórico, sugerir ações preventivas.<br>
+                <strong>Acompanhar a evolução</strong> — verificar se o tratamento está a resultar ao longo do tempo.
+            </p>
+            <p>
+                Todos os dados ficam integrados no software ADIFAL, acessíveis a qualquer momento.
+            </p>
+
+            <h2>Instalação por Sala vs. por Vaca</h2>
+            <p>
+                <strong>Por sala de ordenha</strong> — uma unidade analisa o leite de toda a sala. Deteta se há mamite no lote, 
+                mas não identifica qual o animal. Ideal para quem quer proteção do tanque a menor custo.
+            </p>
+            <p>
+                <strong>Por vaca individual</strong> — uma unidade por ponto de ordenha. Permite saber exatamente qual a vaca 
+                com mamite, gerando histórico individual. Ideal para rastreabilidade total e gestão avançada do rebanho.
+            </p>
+
+            <h2>Perguntas Frequentes</h2>
+
+            <p><strong>A máquina funciona sem internet?</strong><br>
+            Sim. A análise, deteção e desvio são feitos localmente em tempo real, sem necessidade de internet. 
+            No entanto, é necessária conexão à rede para guardar os dados no software ADIFAL e consultar históricos.</p>
+
+            <p><strong>Funciona em qualquer tipo de ordenha?</strong><br>
+            Sim — sala convencional, espinha de peixe, rotativa ou robot. A instalação é adaptada pela equipa técnica da ADIFAL ao equipamento existente.</p>
+
+            <p><strong>Quanto custa?</strong><br>
+            Entre 300€ e 500€ por unidade, dependendo da configuração (por sala ou por vaca). 
+            Se já tiver sensores ou equipamento compatível, o custo pode ser reduzido. 
+            <a href="../index.html#contacto">Contacte-nos</a> para um orçamento personalizado.</p>
+
+            <p><strong>Qual o estado de desenvolvimento?</strong><br>
+            Toda a engenharia está definida. Estamos em fase de desenvolvimento ativo, a construir protótipos e a validar sensores em condições reais. 
+            Se tem interesse em ser parceiro de testes, <a href="../index.html#contacto">entre em contacto</a>.</p>
+
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2026 ADIFAL — Inteligência Agrícola. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

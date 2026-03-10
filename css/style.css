@@ -563,122 +563,137 @@ img {
     font-weight: 700;
 }
 
-/* === HARDWARE / MÁQUINAS (Accordion) === */
-.hardware-accordions {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    max-width: 900px;
+/* === HARDWARE / MÁQUINAS (Button Cards) === */
+.hardware-buttons-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    max-width: 1100px;
     margin: 0 auto;
 }
 
-.hw-accordion {
-    border-radius: 12px;
-    overflow: hidden;
-    border: 1px solid rgba(255, 255, 255, 0.15);
-    background: rgba(255, 255, 255, 0.06);
-    transition: all 0.3s ease;
-}
-
-.hw-accordion.active {
-    background: rgba(255, 255, 255, 0.1);
-    border-color: rgba(255, 255, 255, 0.3);
-}
-
-.hw-accordion-btn {
-    width: 100%;
-    background: none;
-    border: none;
-    padding: 28px 32px;
+.hw-button-card {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 20px;
+    flex-direction: column;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 14px;
+    padding: 32px 28px;
+    text-decoration: none;
+    color: white;
+    transition: all 0.3s ease;
     cursor: pointer;
-    text-align: left;
-    transition: background 0.2s ease;
 }
 
-.hw-accordion-btn:hover {
-    background: rgba(255, 255, 255, 0.05);
+.hw-button-card:hover {
+    background: rgba(255, 255, 255, 0.16);
+    border-color: rgba(255, 255, 255, 0.35);
+    transform: translateY(-6px);
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.25);
 }
 
-.hw-accordion-header {
+.hw-button-card h3 {
+    font-size: 1.15rem;
+    font-weight: 700;
+    margin: 0 0 12px 0;
+    color: white;
+}
+
+.hw-button-card p {
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.72);
+    line-height: 1.7;
+    margin: 0;
     flex: 1;
 }
 
-.hw-accordion-header h3 {
-    font-size: 1.2rem;
-    font-weight: 700;
-    color: white;
-    margin: 0 0 6px 0;
-}
-
-.hw-accordion-preview {
-    font-size: 0.9rem;
-    color: rgba(255, 255, 255, 0.65);
-    margin: 0;
-    line-height: 1.5;
-}
-
-.hw-accordion-arrow {
-    font-size: 1.2rem;
-    color: rgba(255, 255, 255, 0.5);
-    flex-shrink: 0;
-    transition: transform 0.3s ease;
-}
-
-.hw-accordion.active .hw-accordion-arrow {
-    transform: rotate(180deg);
-}
-
-.hw-accordion-content {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.4s ease, padding 0.3s ease;
-    padding: 0 32px;
-}
-
-.hw-accordion.active .hw-accordion-content {
-    max-height: 1200px;
-    padding: 0 32px 32px;
-}
-
-.hw-detail-section {
-    margin-bottom: 24px;
-}
-
-.hw-detail-section:last-child {
-    margin-bottom: 0;
-}
-
-.hw-detail-section h4 {
-    font-size: 1rem;
+.hw-button-cta {
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 0.88rem;
     font-weight: 600;
     color: #A8CCC8;
-    margin: 0 0 8px 0;
     letter-spacing: 0.3px;
-}
-
-.hw-detail-section p {
-    font-size: 0.92rem;
-    color: rgba(255, 255, 255, 0.82);
-    line-height: 1.8;
-    margin: 0 0 10px 0;
-}
-
-.hw-detail-section p:last-child {
-    margin-bottom: 0;
-}
-
-.hw-link {
-    color: #A8CCC8;
-    text-decoration: underline;
-    font-weight: 500;
     transition: color 0.2s ease;
 }
 
-.hw-link:hover {
+.hw-button-card:hover .hw-button-cta {
+    color: white;
+}
+
+/* === HW DETAIL PAGES === */
+.hw-detail-page {
+    padding-top: 100px;
+}
+
+.hw-detail-hero {
+    background: linear-gradient(135deg, #2E5935, #3a7045);
+    padding: 60px 0 50px;
+    color: white;
+}
+
+.hw-detail-hero h1 {
+    font-size: 2.2rem;
+    font-weight: 800;
+    margin: 0 0 12px 0;
+}
+
+.hw-detail-hero p {
+    font-size: 1.05rem;
+    color: rgba(255, 255, 255, 0.8);
+    max-width: 700px;
+    line-height: 1.7;
+}
+
+.hw-detail-body {
+    padding: 60px 0 80px;
+    background: linear-gradient(135deg, #2E5935, #3a7045);
+    color: white;
+}
+
+.hw-detail-body h2 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #A8CCC8;
+    margin: 40px 0 14px 0;
+}
+
+.hw-detail-body h2:first-child {
+    margin-top: 0;
+}
+
+.hw-detail-body p {
+    font-size: 0.95rem;
+    color: rgba(255, 255, 255, 0.85);
+    line-height: 1.85;
+    margin: 0 0 14px 0;
+    max-width: 800px;
+}
+
+.hw-detail-body a {
+    color: #A8CCC8;
+    text-decoration: underline;
+}
+
+.hw-detail-body a:hover {
+    color: white;
+}
+
+.hw-detail-body strong {
+    color: white;
+}
+
+.hw-back-link {
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 0.88rem;
+    font-weight: 600;
+    color: #A8CCC8;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.hw-back-link:hover {
     color: white;
 }
 
@@ -1176,16 +1191,8 @@ img {
         grid-template-columns: 1fr;
     }
 
-    .hw-accordion-btn {
-        padding: 20px 20px;
-    }
-
-    .hw-accordion.active .hw-accordion-content {
-        padding: 0 20px 24px;
-    }
-
-    .hw-accordion-header h3 {
-        font-size: 1.05rem;
+    .hardware-buttons-grid {
+        grid-template-columns: 1fr;
     }
 
     .contact-grid {

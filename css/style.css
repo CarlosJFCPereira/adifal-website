@@ -563,6 +563,104 @@ img {
     font-weight: 700;
 }
 
+/* === HARDWARE / MÁQUINAS === */
+.hardware-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 28px;
+}
+
+.hardware-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 16px;
+    padding: 32px 28px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    transition: all 0.3s ease;
+}
+
+.hardware-card:hover {
+    transform: translateY(-4px);
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+.hardware-card-main {
+    grid-column: 1 / -1;
+}
+
+.hardware-card-icon {
+    font-size: 2.5rem;
+    margin-bottom: 16px;
+}
+
+.hardware-card h3 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+    color: white;
+}
+
+.hardware-card p {
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 0.95rem;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.hardware-specs {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.hardware-spec {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+}
+
+.spec-icon {
+    font-size: 1.4rem;
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.hardware-spec strong {
+    display: block;
+    color: white;
+    font-size: 0.95rem;
+    margin-bottom: 2px;
+}
+
+.hardware-spec p {
+    margin: 0;
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.hardware-components {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.hw-chip {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 20px;
+    padding: 6px 16px;
+    font-size: 0.82rem;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.9);
+    transition: all 0.2s ease;
+}
+
+.hw-chip:hover {
+    background: rgba(255, 255, 255, 0.25);
+}
+
 /* === SCREENSHOTS === */
 .screenshots-placeholder {
     display: flex;
@@ -1054,6 +1152,10 @@ img {
     }
 
     .features-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hardware-grid {
         grid-template-columns: 1fr;
     }
 

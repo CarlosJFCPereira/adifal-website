@@ -66,7 +66,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Observe elements that should animate on scroll
     const animateElements = document.querySelectorAll(
-        '.about-card, .feature-card, .contact-card, .download-card, .about-meaning, .screenshot-frame'
+        '.about-card, .feature-card, .contact-card, .download-card, .about-meaning, .screenshot-frame, .hardware-card'
     );
 
     animateElements.forEach(el => {

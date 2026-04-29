@@ -264,16 +264,18 @@ img {
 
 .hero-wave {
     position: absolute;
-    bottom: -1px;
+    bottom: -11px;
     left: 0;
-    right: 0;
+    width: 100%;
+    overflow: hidden;
     z-index: 3;
 }
 
 .hero-wave svg {
     display: block;
-    width: 100%;
-    height: 80px;
+    width: 200%;
+    height: 140px;
+    will-change: transform;
 }
 
 /* === BUTTONS === */
@@ -338,7 +340,7 @@ img {
 }
 
 .section-green {
-    background: linear-gradient(135deg, #2E5935, #3a7045);
+    background: linear-gradient(135deg, #111111, #1e1e1e);
     color: white;
 }
 
@@ -621,6 +623,65 @@ img {
     color: white;
 }
 
+/* hw-button-card on light (cream) backgrounds */
+.section-cream .hw-button-card {
+    background: #DFF0D8;
+    border: 1px solid #C5DFB8;
+    color: #2D2D2D;
+    box-shadow: 0 8px 30px rgba(45, 90, 45, 0.08);
+    border-radius: 20px;
+}
+
+.section-cream .hw-button-card:hover {
+    background: #D0E9C6;
+    border-color: #A8CC98;
+    box-shadow: 0 12px 40px rgba(45, 90, 45, 0.14);
+    transform: translateY(-6px);
+}
+
+.section-cream .hw-button-card h3 {
+    color: #1F3D22;
+    font-size: 1.15rem;
+    font-weight: 800;
+}
+
+.section-cream .hw-button-card p {
+    color: #3A3A3A;
+    line-height: 1.7;
+}
+
+.section-cream .hw-button-cta {
+    color: #2E6B30;
+    font-weight: 700;
+}
+
+.section-cream .hw-button-card:hover .hw-button-cta {
+    color: #1A4A1C;
+}
+
+/* Funcionalidades - "e muito mais" expand card */
+.func-mais-card {
+    cursor: pointer;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+}
+
+.section-cream .func-mais-card {
+    border-style: dashed;
+    opacity: 0.82;
+}
+
+.section-cream .func-mais-card:hover {
+    opacity: 1;
+    border-style: solid;
+}
+
+#funcExtras {
+    display: contents;
+}
+
 /* === HW DETAIL PAGES === */
 .hw-detail-page {
     padding-top: 100px;
@@ -760,6 +821,12 @@ img {
 }
 
 /* === DOWNLOAD === */
+.download-cards-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+}
+
 .download-card {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -769,6 +836,33 @@ img {
     padding: 48px;
     border: 1px solid #E8E2D5;
     box-shadow: 0 8px 30px rgba(45, 36, 24, 0.06);
+}
+
+.download-card-mobile {
+    border-color: #5B9A3A;
+    border-width: 2px;
+}
+
+.version-badge-mobile {
+    background: #2563eb;
+}
+
+.download-btn-mobile {
+    background: #2563eb;
+}
+
+.download-btn-mobile:hover {
+    background: #1d4ed8;
+}
+
+.future-badge-green {
+    background: #5B9A3A;
+    color: white;
+    padding: 4px 10px;
+    border-radius: 6px;
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
 }
 
 .download-version {
@@ -1122,6 +1216,10 @@ img {
         grid-template-columns: repeat(2, 1fr);
     }
 
+    .download-cards-grid {
+        grid-template-columns: 1fr;
+    }
+
     .download-card {
         grid-template-columns: 1fr;
     }
@@ -1203,7 +1301,12 @@ img {
         grid-template-columns: 1fr;
     }
 
+    .download-cards-grid {
+        grid-template-columns: 1fr;
+    }
+
     .download-card {
+        grid-template-columns: 1fr;
         padding: 28px;
     }
 

@@ -177,7 +177,7 @@
                         <button class="carousel-btn carousel-next" id="carouselNext" aria-label="Seguinte">&#8250;</button>
                     </div>
                 </div>
-                <div class="carousel-dots" id="carouselDots">
+                <div class="carousel-dots" id="screenshotDots">
                     <button class="carousel-dot active" data-index="0" aria-label="Imagem 1"></button>
                     <button class="carousel-dot" data-index="1" aria-label="Imagem 2"></button>
                     <button class="carousel-dot" data-index="2" aria-label="Imagem 3"></button>
@@ -791,7 +791,7 @@
     <script>
         (function() {
             var track = document.getElementById('carouselTrack');
-            var dots = document.querySelectorAll('.carousel-dot');
+            var dots = document.querySelectorAll('#screenshotDots .carousel-dot');
             var total = dots.length;
             var current = 0;
 

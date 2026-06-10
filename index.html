@@ -158,7 +158,7 @@
                     Interface limpa e intuitiva, desenhada para ser fácil de usar no dia-a-dia da exploração.
                 </p>
             </div>
-            <div class="screenshots-placeholder">
+            <div class="screenshots-carousel-wrap">
                 <div class="screenshot-frame">
                     <div class="screenshot-titlebar">
                         <span class="dot red"></span>
@@ -167,8 +167,23 @@
                         <span class="titlebar-text">GadoApp — Gestão de Gado</span>
                     </div>
                     <div class="screenshot-body">
-                        <img src="assets/images/AppExample.png" alt="Exemplo da Aplicação GadoApp" class="screenshot-img">
+                        <div class="carousel" id="screenshotCarousel">
+                            <div class="carousel-track" id="carouselTrack">
+                                <img src="assets/images/DesktopApp_1.png" alt="GadoApp — Painel Principal" class="carousel-slide">
+                                <img src="assets/images/DesktopApp_2.png" alt="GadoApp — Gestão de Animais" class="carousel-slide">
+                                <img src="assets/images/DesktopApp_3.png" alt="GadoApp — Calendário" class="carousel-slide">
+                                <img src="assets/images/DesktopApp_4.png" alt="GadoApp — Financeiro" class="carousel-slide">
+                            </div>
+                        </div>
+                        <button class="carousel-btn carousel-prev" id="carouselPrev" aria-label="Anterior">&#8249;</button>
+                        <button class="carousel-btn carousel-next" id="carouselNext" aria-label="Seguinte">&#8250;</button>
                     </div>
+                </div>
+                <div class="carousel-dots" id="carouselDots">
+                    <button class="carousel-dot active" data-index="0" aria-label="Imagem 1"></button>
+                    <button class="carousel-dot" data-index="1" aria-label="Imagem 2"></button>
+                    <button class="carousel-dot" data-index="2" aria-label="Imagem 3"></button>
+                    <button class="carousel-dot" data-index="3" aria-label="Imagem 4"></button>
                 </div>
             </div>
         </div>
@@ -771,5 +786,42 @@
     </footer>
 
     <script src="js/main.js"></script>
+    <script>
+        (function() {
+            var track = document.getElementById('carouselTrack');
+            var dots = document.querySelectorAll('.carousel-dot');
+            var total = dots.length;
+            var current = 0;
+
+            function goTo(index) {
+                current = (index + total) % total;
+                track.style.transform = 'translateX(-' + (current * 100) + '%)';
+                dots.forEach(function(d, i) {
+                    d.classList.toggle('active', i === current);
+                });
+            }
+
+            document.getElementById('carouselPrev').addEventListener('click', function() { goTo(current - 1); });
+            document.getElementById('carouselNext').addEventListener('click', function() { goTo(current + 1); });
+            dots.forEach(function(d) {
+                d.addEventListener('click', function() { goTo(parseInt(d.dataset.index)); });
+            });
+
+            // Auto-advance every 4s
+            var timer = setInterval(function() { goTo(current + 1); }, 4000);
+            document.getElementById('screenshotCarousel').addEventListener('mouseenter', function() { clearInterval(timer); });
+            document.getElementById('screenshotCarousel').addEventListener('mouseleave', function() {
+                timer = setInterval(function() { goTo(current + 1); }, 4000);
+            });
+
+            // Touch/swipe support
+            var startX = 0;
+            track.addEventListener('touchstart', function(e) { startX = e.touches[0].clientX; }, {passive: true});
+            track.addEventListener('touchend', function(e) {
+                var diff = startX - e.changedTouches[0].clientX;
+                if (Math.abs(diff) > 50) { goTo(diff > 0 ? current + 1 : current - 1); }
+            }, {passive: true});
+        })();
+    </script>
 </body>
 </html>

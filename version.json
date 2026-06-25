@@ -1,6 +1,4 @@
-{
-    "version":  "0.5.3.0",
-    "downloadUrl":  "https://carlosjfcpereira.github.io/adifal-website/assets/downloads/GadoApp-Beta.zip",
-    "mobileVersion": "1.0.0",
-    "mobileDownloadUrl": "https://drive.google.com/file/d/1CFKOPvsfiLckcJzu7duPnkpxDUkPf13W/view?usp=sharing"
+﻿{
+    "version":  "1.0.0.0",
+    "downloadUrl":  "https://carlosjfcpereira.github.io/adifal-website/assets/downloads/GadoApp-Beta.zip"
 }
